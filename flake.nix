@@ -6,9 +6,11 @@
   };
 
   outputs = { self, nixpkgs, ... } @ inputs: {
-    system = "x86_64-linux";
-    modules = [
-      ./configuration.nix
-    ];
+    nixosConfigurations.cookie = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        ./configuration.nix
+      ];
+    };
   };
 }
