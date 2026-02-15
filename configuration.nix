@@ -18,7 +18,7 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelParams = [ "i915.modeset=1" ];
    
-  networking.hostName = "cookie :D";
+  networking.hostName = "cookie";
 
   networking.networkmanager.enable = true;
   hardware.bluetooth.enable = true;
