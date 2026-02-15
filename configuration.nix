@@ -14,26 +14,11 @@
   boot.loader.grub.efiSupport = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot";
-
-  boot.loader.grub.theme = pkgs.sleek-grub-theme;
-  # boot.loader.grub.theme = (pkgs.sleek-grub-theme.override {
-  #    withBanner = "idk";
-  #    withStyle = "dark";
-  # });
-  boot.loader.grub.splashImage = ./frieren_static2.png;
-  boot.loader.grub.gfxmodeEfi = "1920x1080";
-
+  
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelParams = [ "i915.modeset=1" ];
-  
-  # boot.loader.grub.minegrub-theme = {
-  #    enable = true;
-  #    splash = "yooo!";
-  #    background = "background_options/1.8  - [Classic Minecraft].png";
-  #    boot-options-count = 5;
-  # };
-
-  networking.hostName = "nixos";
+   
+  networking.hostName = "cookie :D";
 
   networking.networkmanager.enable = true;
   hardware.bluetooth.enable = true;
