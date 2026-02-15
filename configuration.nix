@@ -12,6 +12,7 @@
   boot.loader.grub.device = "nodev";
   boot.loader.grub.useOSProber = true;
   boot.loader.grub.efiSupport = true;
+  boot.loader.grub.splashImage = ./cookie-grub-theme/background.png;
   boot.loader.grub.theme = ./cookie-grub-theme;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot";
