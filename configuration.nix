@@ -116,6 +116,7 @@
     git
     kdePackages.dolphin
     telegram-desktop
+    kronosnet
     discord
     fastfetch
     nwg-look
