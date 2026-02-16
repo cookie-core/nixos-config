@@ -11,7 +11,7 @@ terminal-border: "0"
 
 + label {
     text = "Select OS"
-    font = "JetBrainsMono Nerd Font"
+    font = "JetBrainsMono 16"
     color= "#8f8f8f"
     top= 30%-30
     left = 50%-80
@@ -25,7 +25,7 @@ terminal-border: "0"
     width = 50%
     top = 30%
     height = 40%
-    item_font = "JetBrainsMono Nerd Font 18"
+    item_font = "JetBrainsMono 18"
     selected_item_font = "inherit"
     item_color = "#EDFFFF"
     selected_item_color = "#1C1C1C"
