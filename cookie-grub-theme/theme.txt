@@ -25,12 +25,10 @@ terminal-border: "0"
     width = 50%
     top = 30%
     height = 40%
-    icon_width = 32
-    icon_height = 32
-    item_height = 48
-    item_padding = 8
-    item_icon_space = 12
-    item_spacing = 8
+    item_font = "JetBrainsMono Nerd Font 18"
+    item_height = 30
+    item_padding = 5
+    item_spacing = 6
     item_font = "JetBrainsMono Nerd Font"
     item_color = "#EDFFFF"
     selected_item_color= "#1C1C1C"
