@@ -1,6 +1,6 @@
-desktop-color: "#121212"
+desktop-image: "./background.png"
 
-title-text:" "
+title-text: "GRUB"
 message-color: "#757575"
 terminal-left: "0"
 terminal-top: "0"
