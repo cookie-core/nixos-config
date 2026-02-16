@@ -42,10 +42,10 @@ terminal-border: "0"
 
 + progress_bar {
     id = "__timeout__"
-    top = 80% + 5
+    top = 80%+5
     left = 20
     width = 40%
     height = 10
-    bar_style = "boot-menu/*.png"
-    highlight_style = "selected-item/*.png"
+    bar_style = "bar/*.png"
+    highlight_style = "highlight/*.png"
 }
