@@ -35,6 +35,7 @@ terminal-border: "0"
     scrollbar = true
     scrollbar_width = 12
     menu_pixmap_style = "boot-menu/*.png"
+    item_pixmap_style = "item/*.png"
     selected_item_pixmap_style = "selected-item/*.png"
 }
 
