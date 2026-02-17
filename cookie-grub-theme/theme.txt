@@ -42,9 +42,9 @@ terminal-border: "0"
 
 + canvas {
     left = 100%-820
-    width = 800
+    width = 400
     top = 50%-300
-    height = 600
+    height = 190
     
     + image { left = 0      width = 5       top = 0      height = 5       file = "help-menu/nw.png" }
     + image { left = 5      width = 100%-10 top = 0      height = 5       file = "help-menu/n.png" }
@@ -55,5 +55,10 @@ terminal-border: "0"
     + image { left = 0      width = 5       top = 100%-5 height = 5       file = "help-menu/sw.png" }
     + image { left = 5      width = 100%-10 top = 100%-5 height = 5       file = "help-menu/s.png" }
     + image { left = 100%-5 width = 5       top = 100%-5 height = 5       file = "help-menu/se.png" }
+    
+    + label { left = 20     width = 100%-40 top = 20     height = 30      font = "Roberto Regular 18" text = "[C] - open terminal" }
+    + label { left = 20     width = 100%-40 top = 60     height = 30      font = "Roberto Regular 18" text = "[E] - open settings" }
+    + label { left = 20     width = 100%-40 top = 100    height = 30      font = "Roberto Regular 18" text = "[enter] - choose option" }
+    + label { left = 20     width = 100%-40 top = 140    height = 30      font = "Roberto Regular 18" text = "[arrows] - move selection" }
 }
 
