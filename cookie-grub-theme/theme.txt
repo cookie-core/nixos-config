@@ -46,10 +46,10 @@ terminal-border: "0"
     top = 50%-300
     height = 190
  
-    + label { left = 20     width = 100%-40 top = 20     height = 30      font = "Roberto Regular 18" color = "#EDFFFF" align = "center" text = "[C] - open terminal" }
-    + label { left = 20     width = 100%-40 top = 60     height = 30      font = "Roberto Regular 18" color = "#EDFFFF" align = "center" text = "[E] - open settings" }
-    + label { left = 20     width = 100%-40 top = 100    height = 30      font = "Roberto Regular 18" color = "#EDFFFF" align = "center" text = "[enter] - choose option" }
-    + label { left = 20     width = 100%-40 top = 140    height = 30      font = "Roberto Regular 18" color = "#EDFFFF" align = "center" text = "[arrows] - move selection" }   
+    + label { left = 20     width = 100%-40 top = 20     height = 30      font = "Roboto Regular 18" color = "#EDFFFF" align = "center" text = "[C] - open terminal" }
+    + label { left = 20     width = 100%-40 top = 60     height = 30      font = "Roboto Regular 18" color = "#EDFFFF" align = "center" text = "[E] - open settings" }
+    + label { left = 20     width = 100%-40 top = 100    height = 30      font = "Roboto Regular 18" color = "#EDFFFF" align = "center" text = "[enter] - choose option" }
+    + label { left = 20     width = 100%-40 top = 140    height = 30      font = "Roboto Regular 18" color = "#EDFFFF" align = "center" text = "[arrows] - move selection" }   
 
     + image { left = 0      width = 5       top = 0      height = 5       file = "help-menu/nw.png" }
     + image { left = 5      width = 100%-10 top = 0      height = 5       file = "help-menu/n.png" }
