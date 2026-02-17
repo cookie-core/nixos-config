@@ -9,17 +9,6 @@ terminal-height: "100%"
 terminal-border: "0"
 
 
-+ label {
-    text = "Select OS"
-    font = "Roboto Regular 42"
-    color= "#8f8f8f"
-    top= 30%-30
-    left = 50%-80
-    align = "center"
-    width = 160
-    height = 40
-}
-
 + boot_menu {
     left = 20
     width = 800
@@ -50,20 +39,21 @@ terminal-border: "0"
     highlight_style = "highlight/*.png"
 }
 
+
 + canvas {
-    left = 100%-20
+    left = 100%-820
     width = 800
     top = 50%-300
     height = 600
     
-    + image { left = 0      width = 5       top = 0       height = 5       file = "help-menu/nw.png" }
-    + image { left = 5      width = 100%-10 top = 0       height = 5       file = "help-menu/n.png" }
-    + image { left = 100%-5 width = 5       top = 0       height = 5       file = "help-menu/ne.png" }
-    + image { left = 0      width = 5       top = 5       height = 100%-10 file = "help-menu/w.png" }
-    + image { left = 5      width = 100%-10 top = 5       height = 100%-10 file = "help-menu/c.png" }
-    + image { left = 100%-5 width = 5       top = 5       height = 100%-10 file = "help-menu/e.png" }
-    + image { left = 0      width = 5       top = 100%-10 height = 5       file = "help-menu/sw.png" }
-    + image { left = 5      width = 100%-10 top = 100%-10 height = 5       file = "help-menu/s.png" }
-    + image { left = 100%-5 width = 5       top = 100%-10 height = 5       file = "help-menu/se.png" }
+    + image { left = 0      width = 5       top = 0      height = 5       file = "help-menu/nw.png" }
+    + image { left = 5      width = 100%-10 top = 0      height = 5       file = "help-menu/n.png" }
+    + image { left = 100%-5 width = 5       top = 0      height = 5       file = "help-menu/ne.png" }
+    + image { left = 0      width = 5       top = 5      height = 100%-10 file = "help-menu/w.png" }
+    + image { left = 5      width = 100%-10 top = 5      height = 100%-10 file = "help-menu/c.png" }
+    + image { left = 100%-5 width = 5       top = 5      height = 100%-10 file = "help-menu/e.png" }
+    + image { left = 0      width = 5       top = 100%-5 height = 5       file = "help-menu/sw.png" }
+    + image { left = 5      width = 100%-10 top = 100%-5 height = 5       file = "help-menu/s.png" }
+    + image { left = 100%-5 width = 5       top = 100%-5 height = 5       file = "help-menu/se.png" }
 }
 
