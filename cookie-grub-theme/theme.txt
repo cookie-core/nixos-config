@@ -7,7 +7,7 @@ terminal-width: "100%-20"
 terminal-height: "100%-20"
 terminal-border: "0"
 terminal-box: "terminal/*.png"
-terminal-font: "JetBrainsMono Regular 14"
+terminal-font: "JetBrainsMono Regular 16"
 
 
 + boot_menu {
