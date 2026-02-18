@@ -132,7 +132,7 @@
     roboto
     roboto-serif
   ];
-  fonts.fontconfig.enabled = true;
+  fonts.fontconfig.enable = true;
   fonts.fontconfig.defaultFonts = {
     serif = [ "Roboto Serif" ];
     sansSerif = [ "Roboto" ];
