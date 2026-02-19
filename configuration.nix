@@ -125,6 +125,7 @@
     slurp
     wl-clipboard
     obsidian
+    tor-browser
   ];
   fonts.packages = with pkgs; [
     noto-fonts-color-emoji
