@@ -2,13 +2,13 @@ desktop-image: "background.png"
 desktop-image-scale-method: "fitheight"
 
 title-text: " "
-terminal-left: "10"
-terminal-top: "10"
-terminal-width: "100%-20"
-terminal-height: "100%-20"
+terminal-left: "10%"
+terminal-top: "10%"
+terminal-width: "80%"
+terminal-height: "80%"
 terminal-border: "0"
 terminal-box: "terminal/*.png"
-terminal-font: "JetBrainsMono Regular 16"
+terminal-font: "JetBrains Mono Bold 16"
 
 
 + boot_menu {
