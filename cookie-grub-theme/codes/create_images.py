@@ -13,6 +13,8 @@ item_color = "#EDFFFFFF"
 selected_item_color = "#7A9EDBFF"
 
 
+def gradient_formula(x, all_size):
+    return ((all_size - x) / all_size) ** 6
 
 menu_background = Image.new("RGBA", ( base_size, base_size ), background_color)
 menu_background.save(menu_background_path)
@@ -30,7 +32,7 @@ for i in range(4):
 
     item = Image.new("RGBA", corners_size, current_item_color)
     selected_item = Image.new("RGBA", corners_size, current_selected_item_color)
-    
+
     item.save(f"{item_style_folder}/{corners[i]}.png")
     selected_item.save(f"{selected_item_style_folder}/{corners[i]}.png")
 
@@ -49,6 +51,13 @@ for i in range(4):
     item = Image.new("RGBA", borders_sizes[i % 2], current_item_color)
     selected_item = Image.new("RGBA", borders_sizes[i % 2], current_selected_item_color)
 
+    if i == 1 or i == 3:
+        for x in range(base_size):
+            for y in range(item_line_size):
+                opacity = gradient_formula(x, base_size)
+                opacity_int = int(opacity * 256)
+                selected_item.putpixel((x, y), ImageColor.getrgb(selected_item_color)[:3] + (opacity_int,))
+
     item.save(f"{item_style_folder}/{borders[i]}.png")
     selected_item.save(f"{selected_item_style_folder}/{borders[i]}.png")
 
@@ -58,8 +67,7 @@ selected_item_center = Image.new("RGBA", ( base_size, base_size ), "#00000000")
 
 for i in range(base_size):
     for j in range(base_size):
-        opacity = (base_size - i) / 100
-        opacity **= 3
+        opacity = gradient_formula(i, base_size)
         opacity_int = int(opacity * 256)
         selected_item_center.putpixel((i, j), ImageColor.getrgb(selected_item_color)[:3] + (opacity_int,))
 
