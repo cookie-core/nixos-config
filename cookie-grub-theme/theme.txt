@@ -1,6 +1,5 @@
 desktop-image: "background.png"
 desktop-image-scale-method: "fitheight"
-desktop-image-v-align: "left"
 
 title-text: " "
 terminal-left: "10"
