@@ -14,7 +14,6 @@
   boot.loader.grub.efiSupport = true;
   boot.loader.grub.gfxmodeEfi = "auto";
   boot.loader.grub.splashImage = ./cookie-grub-theme/terminal/c.png;
-  boot.loader.grub.splashMode = "normal";
   boot.loader.grub.theme = ./cookie-grub-theme;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot";
