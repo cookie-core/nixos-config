@@ -1,4 +1,4 @@
-from PIL import Image
+from PIL import Image, ImageColor
 from pathlib import Path
 
 base_dir = Path(__file__).resolve().parent
@@ -11,6 +11,8 @@ base_size = 100
 background_color = "#1C1C1C9C"
 item_color = "#EDFFFFFF"
 selected_item_color = "#7A9EDBFF"
+
+
 
 menu_background = Image.new("RGBA", ( base_size, base_size ), background_color)
 menu_background.save(menu_background_path)
@@ -53,6 +55,14 @@ for i in range(4):
 
 item_center = Image.new("RGBA", ( base_size, base_size ), "#00000000")
 selected_item_center = Image.new("RGBA", ( base_size, base_size ), "#00000000")
+
+for i in range(base_size):
+    for j in range(base_size):
+        opacity = (base_size - i) / 100
+        opacity **= 3
+        opacity_int = int(opacity * 256)
+        selected_item_center.putpixel((i, j), ImageColor.getrgb(selected_item_color)[:3] + (opacity_int,))
+
 item_center.save(f"{item_style_folder}/c.png")
 selected_item_center.save(f"{selected_item_style_folder}/c.png")
 
