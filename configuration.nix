@@ -112,6 +112,7 @@
     lua51Packages.lua
     luaPackages.luarocks
     kitty
+    alacritty
     unzip
     wget
     git
