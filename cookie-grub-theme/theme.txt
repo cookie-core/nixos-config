@@ -16,7 +16,7 @@ terminal-font: "JetBrains Mono Bold 16"
     width = 40%-20
     top = 20%
     height = 50%
-    item_font = "Roboto Regular 42"
+    item_font = "Poppins Regular 18"
     selected_item_font = "inherit"
     item_color = "#EDFFFF"
     selected_item_color = "#EDFFFF"
