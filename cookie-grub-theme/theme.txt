@@ -29,8 +29,10 @@ terminal-font: "JetBrains Mono Bold 18"
     selected_item_color = "#EDFFFF"
 
     scrollbar = true
-    scrollbar_width = 7
-    scrollbar_style = "styles/scrollbar/*.png"
+    scrollbar_width = 20
+    scrollbar_frame = "styles/scrollbar/*.png"
+    scrollbar_thumb = "styles/scrollbar/*.png"
+    
 
     item_pixmap_style = "styles/item/*.png"
     selected_item_pixmap_style = "styles/selected-item/*.png"
@@ -87,9 +89,9 @@ terminal-font: "JetBrains Mono Bold 18"
     height = 10%
     width = 40%
 
-    text = "GRUB"
+    text = "Grub Bootloader"
     font = "Roboto Regular 42"
-    color = "#EDFFFF"
+    color = "#CFE3E3"
     align = "center"
 }
 
