@@ -7,17 +7,6 @@
     ];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   
-  boot.loader.systemd-boot.enable = false;
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "nodev";
-  boot.loader.grub.useOSProber = true;
-  boot.loader.grub.efiSupport = true;
-  boot.loader.grub.gfxmodeEfi = "auto";
-  boot.loader.grub.splashImage = ./cookie-grub-theme/styles/terminal/c.png;
-  boot.loader.grub.theme = ./cookie-grub-theme;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/boot";
-  
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelParams = [ "i915.modeset=1" ];
    
@@ -75,7 +64,13 @@
     extraGroups = [ "networkmanager" "wheel" ];
     useDefaultShell = true;
   };
+  users.users.chocolate = {
+      isNormalUser = true;
+      initialPassword = "";
+      group = "test";
+  };
   users.defaultUserShell = pkgs.zsh;
+  users.groups.test = {};
 
   programs.firefox.enable = true;
   nixpkgs.config.allowUnfree = true;
