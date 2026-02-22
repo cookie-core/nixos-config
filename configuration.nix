@@ -13,7 +13,7 @@
   boot.loader.grub.useOSProber = true;
   boot.loader.grub.efiSupport = true;
   boot.loader.grub.gfxmodeEfi = "auto";
-  boot.loader.grub.splashImage = ./cookie-grub-theme/terminal/c.png;
+  boot.loader.grub.splashImage = ./cookie-grub-theme/styles/terminal/c.png;
   boot.loader.grub.theme = ./cookie-grub-theme;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot";
@@ -47,11 +47,11 @@
   };
 
   services.xserver.enable = true;
-  services.xserver.displayManager.gdm.enable = true;
+  services.displayManager.gdm.enable = true;
   programs.hyprland.enable = true;
 
-  hardware.opengl.enable = true;
-  hardware.opengl.extraPackages = with pkgs; [
+  hardware.graphics.enable = true;
+  hardware.graphics.extraPackages = with pkgs; [
     intel-vaapi-driver
     libva
   ];
@@ -67,7 +67,7 @@
     pulse.enable = true;
   };
 
-  services.xserver.libinput.enable = true;
+  services.libinput.enable = true;
 
   users.users.cookie = {
     isNormalUser = true;
@@ -83,7 +83,7 @@
     enable = true;
     enableCompletion = true;
     syntaxHighlighting.enable = true;
-    oh-my-zsh = {
+    ohMyZsh = {
       enable = true;
       # theme = "powerlevel10k/powerlevel10k";
     };
