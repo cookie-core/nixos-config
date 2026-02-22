@@ -1,50 +1,113 @@
+title-text: " "
+
 desktop-image: "background.png"
 desktop-image-scale-method: "fitheight"
 
-title-text: " "
 terminal-left: "10%"
 terminal-top: "10%"
 terminal-width: "80%"
 terminal-height: "80%"
+
 terminal-border: "0"
-terminal-box: "terminal/*.png"
+terminal-box: "styles/terminal/*.png"
 terminal-font: "JetBrains Mono Bold 18"
 
 
 + boot_menu {
-    left = 10
-    width = 40%-20
     top = 20%
+    left = 10
     height = 50%
+    width = 40%-20
+
+    item_height = 30
+    item_padding = 7
+    item_spacing = 15
+    
     item_font = "Roboto Regular 18"
     selected_item_font = "inherit"
     item_color = "#EDFFFF"
     selected_item_color = "#EDFFFF"
-    item_height = 30
-    item_padding = 7
-    item_spacing = 15
+
     scrollbar = true
-    scrollbar_width = 12
-    item_pixmap_style = "item-styled-box/*.png"
-    selected_item_pixmap_style = "selected-item-styled-box/*.png"
+    scrollbar_width = 7
+    scrollbar_thumb = "styles/scrollbar/*.png"
+
+    item_pixmap_style = "styles/item/*.png"
+    selected_item_pixmap_style = "styles/selected-item/*.png"
 }
 
 
 + progress_bar {
-    id = "__timeout__"
     top = 80%+5
     left = 20
-    width = 40%
     height = 5
-    bar_style = "bar/*.png"
-    highlight_style = "highlight/*.png"
+    width = 40%
+
+    id = "__timeout__"
+    bar_style = "styles/progress-bar/*.png"
+    highlight_style = "styles/highlight/*.png"
+}
+
++ vbox {
+    top = 70%+10
+    left = 10
+    height = 20%
+    width = 40% -20
+    
+    + hbox {
+        + label {
+            text = "[E]"
+            font = "JetBrains Mono Bold 16"
+            color = "FFE08A"
+        }
+        + label {
+            text = " edit"
+            font = "Roboto Regular 16"
+            color = "EDFFFF"
+        }
+    }
+
+    + hbox {
+        + label {
+            text = "[C]"
+            font = "JetBrains Mono Bold 16"
+            color = "FFE08A"
+        }
+        + label {
+            text = " command line"
+            font = "Roboto Regular 16"
+            color = "EDFFFF"
+        }
+    }
+}
+
++ label {
+    top = 10%
+    left = 0
+    height = 10%
+    width = 40%
+
+    text = "GRUB"
+    font = "Roboto Regular 42"
+    color = "EDFFFF"
+    align = "center"
 }
 
 + image {
     top = 0
     left = 0
-    width = 40%
     height = 100%
-    file = "menu-background.png"
+    width = 40%
+
+    file = "styles/menu/main.png"
+}
+
++ image {
+    top = 0
+    left = 40%
+    height = 100%
+    width = 10%
+
+    file = "styles/menu/side.png"
 }
 
