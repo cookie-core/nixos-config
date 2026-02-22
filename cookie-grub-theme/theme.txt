@@ -52,7 +52,7 @@ terminal-font: "JetBrains Mono Bold 18"
     top = 70%+10
     left = 10
     height = 20%
-    width = 40% -20
+    width = 40%-20
     
     + hbox {
         + label {
