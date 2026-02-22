@@ -31,12 +31,12 @@ terminal-font: "JetBrains Mono Bold 18"
     item_pixmap_style = "styles/item/*.png"
     selected_item_pixmap_style = "styles/selected-item/*.png"
 
-    scrollbar = false
+    scrollbar = true
 }
 
 
 + progress_bar {
-    top = 100%-5
+    top = 100%-10
     left = 0
     height = 5
     width = 40%
