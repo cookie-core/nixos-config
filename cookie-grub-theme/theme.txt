@@ -58,12 +58,12 @@ terminal-font: "JetBrains Mono Bold 18"
         + label {
             text = "[E]"
             font = "JetBrains Mono Bold 16"
-            color = "FFE08A"
+            color = "#FFE08A"
         }
         + label {
             text = " edit"
             font = "Roboto Regular 16"
-            color = "EDFFFF"
+            color = "#EDFFFF"
         }
     }
 
@@ -71,12 +71,12 @@ terminal-font: "JetBrains Mono Bold 18"
         + label {
             text = "[C]"
             font = "JetBrains Mono Bold 16"
-            color = "FFE08A"
+            color = "#FFE08A"
         }
         + label {
             text = " command line"
             font = "Roboto Regular 16"
-            color = "EDFFFF"
+            color = "#EDFFFF"
         }
     }
 }
@@ -89,7 +89,7 @@ terminal-font: "JetBrains Mono Bold 18"
 
     text = "GRUB"
     font = "Roboto Regular 42"
-    color = "EDFFFF"
+    color = "#EDFFFF"
     align = "center"
 }
 
