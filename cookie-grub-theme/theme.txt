@@ -30,7 +30,7 @@ terminal-font: "JetBrains Mono Bold 18"
 
     scrollbar = true
     scrollbar_width = 7
-    scrollbar_thumb = "styles/scrollbar/*.png"
+    scrollbar_style = "styles/scrollbar/*.png"
 
     item_pixmap_style = "styles/item/*.png"
     selected_item_pixmap_style = "styles/selected-item/*.png"
@@ -106,7 +106,7 @@ terminal-font: "JetBrains Mono Bold 18"
     top = 0
     left = 40%
     height = 100%
-    width = 10%
+    width = 20%
 
     file = "styles/menu/side.png"
 }
