@@ -32,16 +32,19 @@ terminal-font: "JetBrains Mono Bold 18"
     selected_item_pixmap_style = "styles/selected-item/*.png"
 
     scrollbar = true
+    scrollbar_frame = "styles/scrollbar-frame/*.png"
+    scrollbar_thumb = "styles/scrollbar/*.png"
 }
 
 
 + progress_bar {
-    top = 100%-10
+    id = "__timeout__"
+
+    top = 100%-50
     left = 0
-    height = 5
+    height = 10
     width = 40%
 
-    id = "__timeout__"
     bar_style = "styles/progress-bar/*.png"
     highlight_style = "styles/highlight/*.png"
 }
