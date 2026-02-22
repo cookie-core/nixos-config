@@ -28,14 +28,14 @@ terminal-font: "JetBrains Mono Bold 18"
     item_color = "#EDFFFF"
     selected_item_color = "#EDFFFF"
 
-    scrollbar = true
-    scrollbar_width = 20
-    scrollbar_frame = "styles/scrollbar/*.png"
-    scrollbar_thumb = "styles/scrollbar/*.png"
-    
-
     item_pixmap_style = "styles/item/*.png"
     selected_item_pixmap_style = "styles/selected-item/*.png"
+
+    scrollbar = true
+    scrollbar_width = 50
+    scrollbar_frame = "styles/scrollbar/*.png"
+    scrollbar_thumb = "styles/scrollbar/*.png"
+    scrollbar_slice = "east"
 }
 
 
