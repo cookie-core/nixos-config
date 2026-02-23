@@ -9,7 +9,7 @@
         nixosConfigurations.cookie = nixpkgs.lib.nixosSystem {
             system = "x86_64-linux";
             modules = [
-                ./bootloader/bootloader.nix
+                ./boot/boot.nix
                 ./configuration.nix
             ];
         };

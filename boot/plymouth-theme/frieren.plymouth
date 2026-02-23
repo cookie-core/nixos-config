@@ -1,0 +1,7 @@
+[Plymouth Theme]
+Name=frieren
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/frieren
+ScriptFile=/usr/share/plymouth/themes/frieren/frieren.script

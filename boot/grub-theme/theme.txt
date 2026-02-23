@@ -1,0 +1,142 @@
+title-text: " "
+
+desktop-image: "background.png"
+desktop-image-scale-method: "fitheight"
+
+terminal-top: "0"
+terminal-left: "0"
+terminal-height: "100%"
+terminal-width: "100%"
+
+terminal-border: "0"
+terminal-box: "styles/terminal/*.png"
+
+
++ label {
+    top = 10%
+    left = 20%
+    height = 10%
+    width = 60%
+
+    text = "GNU GRUB"
+    font = "Roboto Bold 80"
+    color = "#242424"
+    align = "center"
+}
+
++ boot_menu {
+    top = 20%
+    left = 20%
+    height = 50%
+    width = 60%
+
+    item_height = 30
+    item_padding = 2
+    item_spacing = 40
+    
+    item_font = "Roboto Regular 22"
+    selected_item_font = "inherit"
+    item_color = "#EDFFFF"
+    selected_item_color = "#EDFFFF"
+
+    menu_pixmap_style = "styles/boot-menu/*.png"
+    item_pixmap_style = "styles/item/*.png"
+    selected_item_pixmap_style = "styles/selected-item/*.png"
+
+    scrollbar = true
+    scrollbar_width = 20
+    scrollbar_thumb = "styles/scrollbar/*.png"
+}
+
+
++ progress_bar {
+    id = "__timeout__"
+
+    top = 100%-5
+    left = 0
+    height = 10
+    width = 100%
+
+    bar_style = "styles/progress-bar/*.png"
+    highlight_style = "styles/highlight/*.png"
+}
+
++ vbox {
+    top = 70%+10
+    left = 50%-200
+    height = 30%
+    width = 200
+    
+    + hbox {
+        + label {
+            text = "[E]"
+            font = "JetBrains Mono Bold 16"
+            color = "#A8BABA"
+        }
+        + label {
+            text = " Edit Boot Parameters"
+            font = "Roboto Regular 16"
+            color = "#EDFFFF"
+        }
+    }
+
+    + hbox {
+        + label {
+            text = "[↑]"
+            font = "JetBrains Mono Bold 16"
+            color = "#A8BABA"
+        }
+        + label {
+            text = " Move Selection Up"
+            font = "Roboto Regular 16"
+            color = "#EDFFFF"
+        }
+    }
+
+    + hbox {
+        + label {
+            text = "[↵]"
+            font = "JetBrains Mono Bold 16"
+            color = "#A8BABA"
+        }
+        + label {
+            text = " Boot Selected Entry"
+            font = "Roboto Regular 16"
+            color = "#EDFFFF"
+        }
+    }
+}
+
++ vbox {
+    top = 70%+10
+    left = 50%
+    height = 30%
+    width = 200
+    
+    + hbox {
+        + label {
+            text = "[C]"
+            font = "JetBrains Mono Bold 16"
+            color = "#A8BABA"
+        }
+        + label {
+            text = " Open Command Line"
+            font = "Roboto Regular 16"
+            color = "#EDFFFF"
+        }
+    }
+
+    + hbox {
+        + label {
+            text = "[↓]"
+            font = "JetBrains Mono Bold 16"
+            color = "#A8BABA"
+        }
+        + label {
+            text = " Move Selection Down"
+            font = "Roboto Regular 16"
+            color = "#EDFFFF"
+        }
+    }
+}
+

@@ -6,9 +6,6 @@
       ./hardware-configuration.nix
     ];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-  boot.kernelParams = [ "i915.modeset=1" ];
    
   networking.hostName = "cookie";
 
@@ -36,7 +33,7 @@
   };
 
   services.xserver.enable = true;
-  services.displayManager.gdm.enable = true;
+  services.displayManager.sddm.enable = true;
   programs.hyprland.enable = true;
 
   hardware.graphics.enable = true;
@@ -95,6 +92,7 @@
     mpvpaper
     foot
     mako
+    hyprlauncher
     wofi
     wofi-emoji
     waybar
@@ -123,6 +121,7 @@
     wl-clipboard
     obsidian
     tor-browser
+    obs-studio
   ];
   fonts.packages = with pkgs; [
     noto-fonts-color-emoji

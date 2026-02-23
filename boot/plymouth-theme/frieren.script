@@ -1,0 +1,70 @@
+Window.SetBackgroundTopColor(0, 0, 0);
+Window.SetBackgroundBottomColor(0, 0, 0);
+
+bg = Image("background.png");
+bg.ScaleToMaximumRes();
+bg.sprite = Sprite(bg);
+
+// --- animation ---
+// =================
+
+for (i = 0; i < 6; i++)
+    frieren.images[i] = Image("frame" + i + ".png");
+
+frieren.sprite = Sprite();
+
+frieren.x = Window.GetX() + (Window.GetWidth() / 2 - frieren.images[0].GetWidth() / 2);
+frieren.y = Window.GetY() + (Window.GetHeight() / 2 - frieren.images[0].GetHeight() / 2) - 20;
+frieren.sprite.SetPosition(frieren.x, frieren.y, 2);
+
+frame_progress = 0;
+
+fun refreshf() {
+    frieren.sprite.SetImage(frieren.images[Math.Int(frame_progress) % 6]);
+    frame_progress += 1 / 3;
+}
+
+Plymouth.SetRefreshFunction(refreshf);
+
+
+// --- background ---
+// ==================
+
+background.image = Image("background.png"); 
+background.image = background_image.Resize(Window.GetWidth(), Window.GetHeight()); 
+background.sprite = Sprite(background.image); 
+background.sprite.SetZ(0);
+
+panel.image = Image("panel.png");
+panel.sprite = Sprite(panel.image);
+panel.x = Window.GetX() + (Window.GetWidth() / 2 - panel.image.GetWidth() / 2);
+panel.y = Window.GetY() + (Window.GetHeight() / 2 - panel.image.GetHeight() / 2);
+panel.sprite.SetPosition(panel.x, panel.y, 1);
+
+
+// --- progress bar ---
+// ====================
+
+progress_box.image = Image("progress_box.png");
+progress_box.sprite = Sprite(progress_box.image);
+progress_box.x = Window.GetX() + Window.GetWidth() / 2 - progress_box.image.GetWidth() / 2;
+progress_box.y = Window.GetY() + Window.GetHeight() / 2 - progress_box.image.GetHeight() + panel.image.GetHeight() / 2 - 10;
+progress_box.sprite.SetPosition(progress_box.x, progress_box.y, 2);
+
+progress_bar.original_image = Image("progress_bar.png");
+progress_bar.sprite = Sprite();
+progress_bar.x = Window.GetX() + Window.GetWidth() / 2 - progress_bar.original_image.GetWidth() / 2;
+progress_bar.y = Window.GetY() + Window.GetHeight() / 2 - progress_bar.original_image.GetHeight() + panel.image.GetHeight() / 2 - 10;
+progress_bar.sprite.SetPosition(progress_bar.x, progress_bar.y, 3);
+
+mx_progress = 0;
+fun progressf(duration, progress) {
+    if (progress > mx_progress) {
+        progress_bar.image = progress_bar.original_image.Scale(progress_bar.original_image.GetWidth(progress_bar.original_image) * progress, progress_bar.original_image.GetHeight());
+        progress_bar.sprite.SetImage(progress_bar.image);
+        mx_progress = progress;
+    }
+}
+
+Plymouth.SetBootProgressFunction(progressf);
+
